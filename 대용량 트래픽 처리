@@ -1,0 +1,6 @@
+API-Server 2개
+실제 비즈니스 로직 처리
+Load Balancer
+Request를 연결된 서버들에게 나누어줌
+장애 발생시 해당 LB에게 할당된 IP를 다른 LB에게 넘겨줌
+...
