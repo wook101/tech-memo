@@ -1,0 +1,42 @@
+# Ubuntu에서 telnet 설치하기   
+1. Telnet의 개념   
+   
+포트번호 : 23번   
+텔넷은 평문통신으로, 취약점을 가지고 있음.   
+해킹과 공격이 가능한 서비스 포트 (포트가 열려있을 시 공격 가능)   
+보안 프로토콜 : SSH   
+   
+   
+2. Telnet 포트 열기   
+
+$ su   (root계정 들어가기)   
+$ iptables -A INPUT -p tcp --dport 23 -j ACCEPT   
+$ sudo iptables-save   
+   
+
+   
+3. Telnet 설치   
+   
+$ sudo apt-get install xinetd telnetd   
+$ cd /etc/xinet.d   
+$ cat > telnet   
+   
+//파일 설정하기   
+service telnet   
+{   
+disable = yes   
+flags = REUSE   
+socket_type = stream   
+wait = no   
+user = root   
+server = /usr/sbin/in.telnetd   
+lod_on_failed += USERID   
+}   
+   
+    
+   
+$ sudo /etc/init.d/xinetd restart   
+$ telnet 해당ip주소   
+   
+   
+출처: https://young21story.tistory.com/51 [코딩일지]
