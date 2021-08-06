@@ -10,15 +10,19 @@
 2. Telnet 포트 열기   
 
 $ su   (root계정 들어가기)   
+iptables 설치가 안되어 있는 경우   
+[ iptables-persistent 패키지 이용하기 ]   
+패키지 설치: sudo apt-get install iptables-persistent netfilter-persistent
 $ iptables -A INPUT -p tcp --dport 23 -j ACCEPT   
-$ sudo iptables-save   
+$ iptables --list 규칙 설정 확인
+$ sudo iptables-save 규칙저장
    
 
    
 3. Telnet 설치   
    
 $ sudo apt-get install xinetd telnetd   
-$ cd /etc/xinet.d   
+$ cd /etc/xinetd.d   
 $ cat > telnet   
    
 //파일 설정하기   
@@ -37,6 +41,12 @@ lod_on_failed += USERID
    
 $ sudo /etc/init.d/xinetd restart   
 $ telnet 해당ip주소   
+aws ec2에서는 root계정으로 접속해야된다.   
+root계정 접속이 게속 incorrect가 뜰 경우   
+/etc/securrtty 파일을 /etc/securrty.old로 변경한다!   
+mv /etc/securrtty  /etc/securrty.old
+다시 root계정으로 접속! 접속완료!!   
    
    
+
 출처: https://young21story.tistory.com/51 [코딩일지]
