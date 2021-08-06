@@ -1,0 +1,28 @@
+# [AWS] EC2 (리눅스) root 계정 활성화 시키기   
+   
+1. root 비밀번호를 먼저 변경하여 준다.      
+#sudo passwd root   
+   
+2. sshd_config 설정정보 변경   
+#sudo vi /etc/ssh/sshd_config   
+:set nu 를 입력하여 보기 좋게 라인수 표시    
+"PermitRootLogin yes" 부분의 주석을 해제하고 저장 (:wq)   
+
+3. 루트 경로에 .ssh 경로를 생성하여 준다.
+#sudo mkdir /root/.ssh
+이미 디렉토리가 있는경우 생성 안해도 됨   
+    
+4. ec2유저의 인증키를 root로 복사한다.
+#sudo cp /home/ec2-user/.ssh/authorized_keys   /root/.ssh   
+   
+5. sshd를 리스타트 한다.   
+#sudo systemctl restart sshd 또는  
+#sudo cp /home/ec2-user/.ssh/authorized_keys /root/.ssh#sudo service sshd restart   
+   
+6. 일반유저 계정으로 접속 했던대로 root로 접속하여 확인해본다.
+#ssh -i 'C:\키페어경로\키페어.pem' root@접속IP   
+   
+7. 정상적으로 접속 된 것을 볼 수 있다.   
+   
+   
+출처: https://goddaehee.tistory.com/193 [갓대희의 작은공간]
