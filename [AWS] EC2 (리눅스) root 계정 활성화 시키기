@@ -8,6 +8,12 @@
 :set nu 를 입력하여 보기 좋게 라인수 표시    
 "PermitRootLogin yes" 부분의 주석을 해제하고 저장 (:wq)   
 
+[텔넷으로 접속할 경우]
+telnet [awsEC2 ip주소]  바로가능 !!      
+계정 root     
+   
+      
+[ssh로 접속할 경우]   
 3. 루트 경로에 .ssh 경로를 생성하여 준다.
 #sudo mkdir /root/.ssh
 이미 디렉토리가 있는경우 생성 안해도 됨   
