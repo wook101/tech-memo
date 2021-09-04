@@ -1,0 +1,7 @@
+7계층 응용: HTTP, TELNET, FTP, SSH
+6계층 표현: SMB, AFP, XDR
+5계층 세션: NetBIOS
+4계층 전송: TCP, UDP
+3계층 네트워크: IP, ICMP, APR, RARP
+2계층 데이터링크: 이더넷, 토큰링, PPP
+1계층 물리: 전선, 광섬유, 동축케이블
