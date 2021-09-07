@@ -54,3 +54,7 @@ replaceAll(정규식, 치환 할 문자열)
 ex) st = "0a1b2c3d4e5f6g7h8i9"
 result = st.replceAll("[a-z]","")  
 print(result) # "0123456789"
+
+
+
+출처: https://wikidocs.net/4308#_2
