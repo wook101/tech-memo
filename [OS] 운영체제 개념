@@ -28,11 +28,15 @@
   연산장치
   제어장치
   
- ram
+  캐시
+   캐시hit
+   캐시miss
+  
+메인 메모리(ram)
  
- disk, ssd
+disk, ssd
  
- ran
+ran
  
  
  
