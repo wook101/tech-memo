@@ -119,4 +119,22 @@ Q11. Array와 List의 차이
 ![image](https://user-images.githubusercontent.com/45925158/137085929-bec100bc-31e9-40cc-9b5c-10eb3207b489.png)
 
 
+Q12. 스트링(String), 스트링버퍼(StringBuffer), 스트링빌더(StringBuilder)의 차이   
+
+스트링은 값을 변화시킬 때, Heap에 새로운 메모리를 사용하고, 참조되는 메모리 주소만 바꿔주는 것이다
+반면 스트링버퍼와 스트링빌더는 Stack에 값을 저장하므로 값이 변화할 때 값을 바꿔 쓴다.
+
+2.1 스트링 버퍼는 Thread-safe이다. 즉 멀티스레드 환경에서 안전하다.   
+
+2.2 스트링 빌더는 스트링 버퍼보다 빠르다.   
+
+Q13. 기본 접근제어자(Default)와 프로텍스(Protect) 접근 제어자의 차이
+ 
+
+클래스에서 접근 제어자를 지정하지 않고 메소드나 변수를 선언했을 때에는 접근 제어자가 기본적으로 Default 형이 된다. Default 멤버는 같은 패키지 안의 다른 패키지 클래스에서 볼 수 있지만, 해당 멤버 패키지 이외의 클래스에서는 볼 수 없다.
+
+ 
+
+Protected는 Default와 동일하지만, Protected 클래스를 상속한 클래스는 패키지 밖에서도 볼 수 있다는 것이 차이점이다.
+
 출처: https://gem1n1.tistory.com/27
