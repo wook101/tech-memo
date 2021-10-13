@@ -1,23 +1,23 @@
 Q1. 자바의 특징
-
 Q2. 객체지향 언어의 장점과 정의
-
 Q3. 선호하는 IDE
-
 Q4. 클래스란
-
 Q5. 객체란 
-
 Q6. 생성자란
-
 Q7. 지역변수, 인스턴스 변수
-
 Q8. 오버라이딩, 오버로딩의 차이
-
 Q9. Private, Public 접근 제어자의 차이
-
 Q10. 추상클래스, 인터페이스의 차이
-
+Q11. 배열과 리스트 (Array and List)
+Q12. 스트링, 스트링버퍼, 스트링 빌더 (String, StringBuffer and StringBuilder)
+Q13. 기본 접근제어자(Default)와 프로텍스(Protect) 접근 제어자
+Q14. 해쉬맵과 해쉬테이블
+Q15. 해쉬셋과 트리셋
+Q16. 자바 컬렉션
+Q17. 예외 (Exception)
+Q18. 예외의 종류
+Q19. 예외 처리 방법
+Q20. 파이널 키워드 (Final)
  
 
  
@@ -115,5 +115,8 @@ Default 생성자를 가진다 (서브클래스가 인스턴스화될 때 호출
 객체 생성 불가하므로 extend (상속)로 구현	객체 생성 불가하므로 implement 로 구현
 
 
+Q11. Array와 List의 차이 
+![image](https://user-images.githubusercontent.com/45925158/137085929-bec100bc-31e9-40cc-9b5c-10eb3207b489.png)
 
 
+출처: https://gem1n1.tistory.com/27
