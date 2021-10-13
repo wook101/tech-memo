@@ -71,8 +71,10 @@ input 텍스트, 체크박스 항목 등과 같은 사용자 인터페이스 요
  
 
 <동작방식>
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FsEIaK%2FbtqCbhF1Yuk%2FcvjWwadOiTJKMYFk3Iwcbk%2Fimg.png)
 
+
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FsEIaK%2FbtqCbhF1Yuk%2FcvjWwadOiTJKMYFk3Iwcbk%2Fimg.png)
  
 
 1. DispatcherServlet이 브라우저로부터 요청을 받는다.
