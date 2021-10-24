@@ -1,1 +1,1 @@
-
+JVM은 크게 Class Loader, Runtime Data Area, Execution Engine으로 구성되어 있다.
