@@ -12,7 +12,7 @@ GRANT ALL PRIVILEGES ON 데이터베이스.* TO '아이디'@'%';
 
 로컬접속
 ```
-grant all privileges on bootex.* TO 사용자@localhost identified by'사용자';
+grant all privileges on bootex.* TO 아이디@localhost identified by'아이디';
 ```
 
 -- 새로고침   
