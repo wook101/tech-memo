@@ -5,7 +5,6 @@
 스레드 풀은 작업처리에 사용되는 스레드를 제한된 개수만큼 정해놓고 작업큐 (Queue)에 들어오는 작업들을 하나씩 스레드가 맡아 처리한다.     
 그렇게 하면 작업처리 요청이 폭증되어도 스레드의 전체개수가 늘어나지 않으므로(제한해서 하나씩 처리하기 때문) 시스템 성능이 급격히 저하되지 않는다.   
    
-https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FTLegy%2Fbtq18oTtGcB%2FkxvtInKlhFKQ8MctYRSKEk%2Fimg.png
-
+![image](https://user-images.githubusercontent.com/45925158/180766461-15439eab-5324-434b-9542-5f8d8dee1d90.png)
 
 출처: https://cheershennah.tistory.com/170 [Today I Learned. @cheers_hena 치얼스헤나:티스토리]
